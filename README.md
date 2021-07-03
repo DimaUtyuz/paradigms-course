@@ -402,3 +402,9 @@
 	* `map_put(TreeMap, Key, Value, Result)`, добавляющее пару ключ-значение в массив, или заменяющее текущее значение для ключа `(O(log n))`;
 	* `map_remove(TreeMap, Key, Result)`, удаляющее отображение для ключа `(O(log n))`;
 	* `map_build(ListMap, TreeMap)`, строящее дерево из неупорядоченного списка пар ключ-значение `(O(n log n))`.
+3.  **Модификация** *HeadTail*
+    * Добавьте правила:
+        * `map_headMapSize(Map, ToKey, Size)`, 
+            возвращающее число пар меньших `ToKey`;
+        * `map_tailMapSize(Map, FromKey, Size)`, 
+            возвращающее число пар больших или равных `FromKey`,
